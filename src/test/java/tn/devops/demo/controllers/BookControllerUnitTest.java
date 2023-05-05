@@ -68,7 +68,7 @@ public class BookControllerUnitTest {
 	    	      .contentType(MediaType.APPLICATION_JSON))
 	    	      .andExpect(status().isOk())
 	    	      .andExpect(jsonPath("$", hasSize(2)))
-	    	      .andExpect(jsonPath("$[0].title", is("serviceTest")))
+	    	      .andExpect(jsonPath("$[15].title", is("serviceTest")))
 	    	      .andExpect(jsonPath("$[1].title", is("serviceTest2")));
     	  
     }
